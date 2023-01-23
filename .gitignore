@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#duck template
+/battlecry
+
 # dependencies
 /node_modules
 /.pnp
