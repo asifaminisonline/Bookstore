@@ -1,6 +1,6 @@
 // Actions
-const ADD = "bookstore/books/add";
-const DEL = "bookstore/books/del";
+const ADD = 'bookstore/books/add';
+const DEL = 'bookstore/books/del';
 
 // Empty array of books
 const initialState = [];
@@ -11,7 +11,7 @@ export default function booksReducer(state = initialState, action = {}) {
     case ADD:
       return [...state, action.payload];
     case DEL:
-      return state.filter((id) => book.id !== action.id);
+      return state.filter((book) => book.id !== action.payload.id);
     default:
       return state;
   }
