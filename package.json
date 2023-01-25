@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
     "chart.js": "^4.0.0",
-    "eslint-plugin-no-param-reassign-allow-reduce": "^1.0.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.0.0",

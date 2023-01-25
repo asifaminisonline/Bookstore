@@ -1,10 +1,9 @@
 import axios from 'axios';
-import env from 'react-dotenv';
+// import env from 'react-dotenv';
 
 const instance = axios.create({
   baseURL:
-    env.API_URL
-    || 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi',
+    'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/IBld3lcF3FPYpt53pEMI',
 });
 
 export const getBooks = async () => {
