@@ -1,29 +1,34 @@
 // Actions
-const ADD = 'add';
-const DEL = 'del';
+const ADD = "add";
+const DEL = "del";
 
 // Empty array of books
-const initialState = [{
-  id: 1,
-  genre: 'genre',
-  title: 'book title',
-  author: 'author',
-  status: 'complete',
-  currentChapter: 'Current chapter',
-  chapterNumber: 'Chapter #number',
-},
+const initialState = [
+  {
+    id: 1,
+    genre: "genre",
+    title: "book title",
+    author: "author",
+    status: "complete",
+    currentChapter: "Current chapter",
+    chapterNumber: "Chapter #number",
+  },
 ];
 
 // Reducer
 export default function booksReducer(state = initialState, action = {}) {
   switch (action.type) {
     case ADD:
-      return [...state, {
-        ...action.payload,
-      }];
+      return [
+        ...state,
+        {
+          ...action.payload,
+        },
+      ];
     case DEL:
       return [...state.filter((book) => book.id !== action.payLoad.id)];
-    default: return state;
+    default:
+      return state;
   }
 }
 
