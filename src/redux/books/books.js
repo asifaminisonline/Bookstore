@@ -1,17 +1,17 @@
 // Actions
-const ADD = "add";
-const DEL = "del";
+const ADD = 'add';
+const DEL = 'del';
 
 // Empty array of books
 const initialState = [
   {
     id: 1,
-    genre: "genre",
-    title: "book title",
-    author: "author",
-    status: "complete",
-    currentChapter: "Current chapter",
-    chapterNumber: "Chapter #number",
+    genre: 'genre',
+    title: 'book title',
+    author: 'author',
+    status: 'complete',
+    currentChapter: 'Current chapter',
+    chapterNumber: 'Chapter #number',
   },
 ];
 
